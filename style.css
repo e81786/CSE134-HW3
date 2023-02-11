@@ -1,0 +1,38 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #d0d3d9;
+}
+
+#home {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.standpic {
+    order: 1;
+    width: 275px;
+    height: 367px;
+    padding: 5px;
+    background: gray;
+}
+
+.home-g {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap
+}
+
+.first-g {
+    order: 3;
+}
+
+.quick-g {
+    order: 4;
+}
+
+
+.emphasis-g {
+
+}
