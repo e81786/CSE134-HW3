@@ -1,41 +1,57 @@
 body {
     font-family: "Montserrat", sans-serif;
-    background-color: #d0d3d9;
+    background-color: #f5e8d5;
+    font-size: 16px;
+}
+
+header {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+    padding: 30px
+}
+
+header a[href$='home.html'] {
+    background-color:aqua;
+}
+
+#navbar {
+    background-color:blanchedalmond;
 }
 
 #home {
-    flex-flow: row wrap;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
 
 }
 
-.standpic {
+.stand-pic {
     order: 1;
-    width: 200px;
-    height: 266px;
     padding: 10px;
-    background: gray;
+    height: auto;
+    width: 30%;
 }
 
 .home-g {
-    background: tomato;
+    order: 2;
     padding: 5px;
-    width: 200px;
-    height: 150px;
     margin-top: 10px;
-    line-height: 150px;
-    font-size: 3em;
+    width: 580px;
     text-align: center;
 }
 
 .first-g {
     order: 3;
+    font-size: 80px;
 }
 
 .quick-g {
     order: 4;
+    font-size: 30px;
+    font-family: "Montserrat", monospace;
 }
 
 .emphasis-g {
