@@ -1,12 +1,13 @@
 body {
     font-family: "Montserrat", sans-serif;
     background-color: #d0d3d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #home {
-    display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
 
 }
 
