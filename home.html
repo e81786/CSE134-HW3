@@ -19,7 +19,7 @@
       <div id="navbar">
         <nav>
           <!--<a href="experiment.html"> Experiments </a>-->
-          <a href="home.html#About">About</a>
+          <a href="home.html#About-me">About</a>
           <a href="home.html#Work">Work</a>
           <a href="contact.html">Contact</a>
         </nav>
@@ -38,53 +38,66 @@
             you're here! I'm a student, swimmer, and software engineer -- always
             looking forward to connect <span>😁</span>
           </p>
+          <br /><br /><br /><br /><br /><br />
+          <a href="home.html#About-me" class="scroll">
+            <span class="downarrow"></span>Learn more about me!
+          </a>
         </div>
       </section>
       <section id="about">
         <h2 class="title">About Me</h2>
         <br />
-        <picture>
-          <img src="images/chese.JPG" alt="Ramen" class="cheese" />
-        </picture>
-        <div class="spiel">
-          <p>
-            Hi there! My name is <i>Eric Dong</i>. I'm currently a student at UC
-            San Diego, studying <b>Cognitive Science</b> with an emphasis in
-            <b>Machine Learning</b>, and a minor chunk of
-            <b>Computer Science</b> on the side. I'm originally from the San
-            Francisco Bay Area but more recently, you can find me in the
-            <strong>San Diego</strong> area: studying, swimming, hanging with my
-            fellowship, or coding!
-          </p>
-          <br />
-          <p>
-            As a software engineer excited to gain more experience in the
-            professional scene, I'm constantly looking to grow and hone my
-            skills, and I can't wait to see where the journey <i>lands</i> me
-            next!
-          </p>
-          <br />
-          <form style="display: inline" action="/contact.html" method="get">
-            <button>Contact Me!</button>
-          </form>
+        <div id="about-me">
+          <picture>
+            <img src="images/chese.JPG" alt="Ramen" class="cheese" />
+          </picture>
+          <div class="spiel">
+            <p>
+              Hi there! My name is <span>Eric Dong</span>. I'm currently a
+              student at UC San Diego, studying
+              <strong>Cognitive Science</strong> with an emphasis in
+              <strong>Machine Learning</strong>, and a minor chunk of
+              <strong>Computer Science</strong> on the side. I'm originally from
+              the San Francisco Bay Area but more recently, you can find me in
+              the San Diego area: studying, swimming, hanging with my
+              fellowship, or coding!
+            </p>
+            <br />
+            <p>
+              As a software engineer excited to gain more experience in the
+              professional scene, I'm constantly looking to grow and hone my
+              skills, and I can't wait to see where the journey <i>lands</i> me
+              next!
+            </p>
+            <br />
+            <form style="display: inline" action="/contact.html" method="get">
+              <button class="contact">Contact Me!</button>
+            </form>
+          </div>
         </div>
         <br />
         <div class="more-about">
-          <button class="accordion">Skills</button>
+          <button class="accordion">
+            <span class="downarrow"></span>Skills
+          </button>
           <!--A FUTURE ACCORDIAN TAG-->
           <div class="panel">
             <ol>
               <li>Lorem ipsum...</li>
             </ol>
           </div>
-          <button class="accordion">Hobbies</button>
+          <button class="accordion">
+            <span class="downarrow"></span>Hobbies
+          </button>
           <!--A FUTURE ACCORDIAN TAG-->
           <div class="panel">
             <ol>
               <li>Lorem ipsum...</li>
             </ol>
           </div>
-          <button class="accordion">Extras</button>
+          <button class="accordion">
+            <span class="downarrow"></span>Extras
+          </button>
           <!--A FUTURE ACCORDIAN TAG-->
           <div class="panel">
             <ol>
@@ -94,17 +107,16 @@
         </div>
       </section>
       <section id="Work">
-        <h3>Work</h3>
-        <div>
-          <p><code>This page is under construction</code></p>
-
-          <details>
+        <h3 class="title">Work</h3>
+        <div id="Constructing">
+          <p class="ongoing"><code>This page is under construction</code></p>
+          <details class="info">
             <summary>Jobs</summary>
             <ul>
               <li>TBD</li>
             </ul>
           </details>
-          <details>
+          <details class="info">
             <summary>Projects I've Worked On</summary>
             <ul>
               <li>TBD</li>
@@ -115,7 +127,8 @@
     </main>
     <footer>
       <hr />
-      <div>
+      <div >
+        <p class="dots">&#x2B2D &#x2B2D &#x2B2D &#x2B2D &#x2B2D &#x2B2D &#x2B2D</p>
         <p>Eric Dong</p>
       </div>
     </footer>
