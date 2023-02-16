@@ -318,6 +318,10 @@ header a[href$="home.html"] img {
   transform: translateY(-60%);
 }
 
+button {
+  color: black;
+}
+
 .contact {
   background-color: #f5e8d5;
   width: 200px;
