@@ -12,6 +12,12 @@ body {
   margin: 0;
 }
 
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 12px;
+  }
+}
+
 header {
   display: flex;
   flex-direction: row;
@@ -29,7 +35,7 @@ header {
 
 header a[href$="home.html"] img {
   height: auto;
-  width: 60%;
+  width: 50%;
 }
 
 #navbar a {
@@ -73,6 +79,26 @@ header a[href$="home.html"] img {
   transform: scale(1.2);
 }
 
+@media only screen and (max-width: 600px) {
+  header {
+    position: relative;
+    padding: 10px;
+    justify-content: stretch;
+  }
+  header a[href$="home.html"] {
+    padding: 0;
+    width: 50%;
+  }
+  header a[href$="home.html"] img {
+    display: inline-block;
+    margin-right: 0;
+  }
+  #navbar a {
+    font-size: 2.8vw;
+    padding-right: 10px;
+  }
+}
+
 h1 {
   font-family: "Montserrat", sans-serif;
   padding: 2%;
@@ -87,6 +113,7 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .media {
@@ -110,6 +137,23 @@ h1 {
   margin: 0;
   width: 100%;
   height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    padding-left: 5%;
+  }
+
+  .in-touch {
+    padding-left: 5%;
+    width: 80%;
+  }
+
+  .smedia {
+    padding-left: 15%;
+    width: 15%;
+    margin-right: 3.3%;
+  }
 }
 
 .mail {
@@ -170,11 +214,24 @@ input[type="submit"]:hover {
 }
 
 @media screen and (max-width: 600px) {
-  .col-25,
-  .col-75,
-  input[type="submit"] {
+  .mail {
+    margin-left: 5%;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
     width: 100%;
-    margin-top: 0;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  input[type="submit"] {
+    width: 40%;
+    margin-top: 1%;
+    float: left;
   }
 }
 
@@ -199,6 +256,40 @@ h2 {
   width: 100%;
 }
 
+.doc {
+  width: 65%;
+  height: 1150px;
+  position: relative;
+}
+
+.down {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  #resume {
+    margin-bottom: 2%;
+  }
+
+  h2 {
+    padding-left: 5%;
+  }
+
+  .doc {
+    display: none;
+  }
+
+  .down {
+    display: block;
+    color: black;
+    text-decoration: none;
+  }
+
+  .rep {
+    width: 4%;
+  }
+}
+
 footer {
   padding-top: 2%;
 }
@@ -218,6 +309,7 @@ footer div {
 
 .dots {
   color: #51826c;
+  font-size: 1.5em;
 }
 
 .dots1,
@@ -269,4 +361,10 @@ footer div {
 
 .dots7:hover {
   color: #2f4858;
+}
+
+@media only screen and (max-width: 600px) {
+  footer {
+    font-size: 3vw;
+  }
 }

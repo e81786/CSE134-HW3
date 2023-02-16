@@ -1,15 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 
-@viewport {
-  width: device-width;
-  zoom: 1;
-}
-
 body {
   font-family: "Poppins", sans-serif;
   background-color: #f5f0e9; /*#f5f0e9 f5e8d5*/
   font-size: 16px;
   margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 12px;
+  }
 }
 
 header {
@@ -78,6 +79,26 @@ header a[href$="home.html"] img {
   transform: scale(1.2);
 }
 
+@media only screen and (max-width: 600px) {
+  header {
+    position: relative;
+    padding: 10px;
+    justify-content: stretch;
+  }
+  header a[href$="home.html"] {
+    padding: 0;
+    width: 50%;
+  }
+  header a[href$="home.html"] img {
+    display: inline-block;
+    margin-right: 0;
+  }
+  #navbar a {
+    font-size: 2.8vw;
+    padding-right: 10px;
+  }
+}
+
 #home {
   display: flex;
   flex-direction: row;
@@ -97,15 +118,17 @@ header a[href$="home.html"] img {
   order: 10;
   text-align: center;
   width: 30%;
-  padding: 1px;
-  padding-right: 4%;
+  padding: 10px;
+  margin: 1px;
+  margin-right: 3%;
 }
 
 .stand-pic {
   order: 10;
-  padding: 10px;
+  padding: 0;
   width: 100%;
   height: auto;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
 }
 
 .home-g {
@@ -136,6 +159,7 @@ header a[href$="home.html"] img {
 .quick-g {
   order: 4;
   font-size: 2vw;
+  padding-bottom: 190px;
 }
 
 .emphasis-g {
@@ -171,7 +195,7 @@ header a[href$="home.html"] img {
     transform: scale(1.1, 0.9) translateY(0);
   }
   30% {
-    transform: scale(0.9, 1.1) translateY(-70%);
+    transform: scale(0.9, 1.1) translateY(-40%);
   }
   50% {
     transform: scale(1, 1) translateY(0);
@@ -188,6 +212,45 @@ header a[href$="home.html"] img {
 
 .scroll + a:hover {
   font-weight: bolder;
+}
+
+@media only screen and (max-width: 600px) {
+  #home {
+    flex-direction: column-reverse;
+    position: relative;
+    z-index: 0;
+  }
+  #home picture {
+    width: 60%;
+    padding: 2px;
+    margin: 1px;
+    margin-top: 2%;
+  }
+  .home-g {
+    margin-top: 5px;
+    width: 70%;
+    margin-bottom: 5%;
+  }
+  .first-g {
+    text-align: center;
+    font-size: 9vw;
+  }
+  .thanks-g {
+    line-height: 10vw;
+    font-size: 3vw;
+  }
+  .quick-g {
+    font-size: 4vw;
+    padding-bottom: 2%;
+  }
+  .downarrow {
+    font-size: 6vw;
+    bottom: 5px;
+  }
+  .scroll {
+    line-height: 0.8em;
+    font-size: 3vw;
+  }
 }
 
 #About {
@@ -232,6 +295,7 @@ header a[href$="home.html"] img {
 .cheese {
   width: 100%;
   height: auto;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
 }
 
 .spiel {
@@ -261,6 +325,8 @@ header a[href$="home.html"] img {
   outline: none;
   cursor: pointer;
   font-size: 1.05em;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-color: gray;
   transition: all 300ms ease-in-out;
 }
 
@@ -307,6 +373,9 @@ header a[href$="home.html"] img {
 
 .accordion:hover {
   font-weight: bolder;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   transform: scale(1.01);
 }
 
@@ -317,6 +386,44 @@ header a[href$="home.html"] img {
   overflow: hidden;
   max-height: 0;
   transition: max-height 0.2s ease-out;
+}
+
+@media only screen and (max-width: 600px) {
+  #about-me {
+    flex-direction: column;
+  }
+
+  .title {
+    font-size: 7vw;
+  }
+
+  #about-me picture {
+    width: 70%;
+    padding-bottom: 3%;
+  }
+
+  .spiel {
+    width: 70%;
+    font-size: 4vw;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+
+  .spiel br {
+    display: none;
+  }
+
+  .qjump:hover {
+    transform: none;
+  }
+
+  .accordion {
+    font-size: 4vw;
+  }
+
+  .rightarrow {
+    font-size: 6vw;
+  }
 }
 
 #Work {
@@ -333,25 +440,76 @@ h3 {
 #Constructing {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: stretch;
   flex-wrap: wrap;
   box-sizing: border-box;
-  align-items: stretch;
+  justify-content: center;
+}
+
+.experience,
+.project {
+  margin-top: 5%;
+  padding: 3%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: gray;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  /*
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    */
+  width: 35%;
+  text-align: center;
+  transition: all 0.4s ease-in-out;
 }
 
 .experience {
+  margin-right: 5%;
 }
 
-.project {
+.experience:hover,
+.project:hover {
+  border-radius: 10%;
 }
 
-/*
-.info {
-  flex: none;
-  padding-left: 17%;
-  padding: 1%;
+h4,
+h5 {
+  line-height: 4%;
+  font-size: 1.7em;
 }
-*/
+
+.suspense {
+  width: 60%;
+  height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  #Constructing {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+  }
+
+  .experience {
+    margin-right: 0;
+  }
+
+  .experience,
+  .project {
+    width: 70%;
+    font-size: 3vw;
+  }
+
+  h4,
+  h5 {
+    font-size: 5vw;
+  }
+
+  .suspense {
+    width: 80%;
+  }
+}
 
 footer {
   padding-top: 2%;
@@ -372,6 +530,7 @@ footer div {
 
 .dots {
   color: #51826c;
+  font-size: 1.5em;
 }
 
 .dots1,
@@ -423,4 +582,10 @@ footer div {
 
 .dots7:hover {
   color: #2f4858;
+}
+
+@media only screen and (max-width: 600px) {
+  footer {
+    font-size: 3vw;
+  }
 }
