@@ -266,7 +266,7 @@ h2 {
   display: none;
 }
 
-@media screen and (max-width: 801px) {
+@media screen and (max-width: 901px) {
   #resume {
     margin-bottom: 2%;
   }
