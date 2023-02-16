@@ -261,10 +261,17 @@ h2 {
   display: none;
 }
 
-@media only screen and (min-width: 601px) and (max-width: 1200px) {
+@media only screen and (max-width: 992px) {
   .doc {
     width: 80%;
-    height: 820px;
+    height: 950px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .doc {
+    width: 80%;
+    height: 780px;
   }
 }
 
