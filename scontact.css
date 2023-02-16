@@ -266,13 +266,6 @@ h2 {
   display: none;
 }
 
-@media screen and (max-width: 1025px) {
-  .doc {
-    width: 75%;
-    height: 667px;
-  }
-}
-
 @media screen and (max-width: 801px) {
   #resume {
     margin-bottom: 2%;
