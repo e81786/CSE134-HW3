@@ -7,6 +7,12 @@ body {
   margin: 0;
 }
 
+@media only screen and (min-width: 1440px) {
+  body {
+    font-size: 1.5vw;
+  }
+}
+
 @media only screen and (min-width: 601px) and (max-width: 834px) {
   body {
     font-size: 10px;
@@ -83,6 +89,19 @@ header a[href$="home.html"] img {
   -o-transform: scale(1.2);
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
+}
+
+@media only screen and (min-width: 1440px) {
+  #navbar a {
+    font-size: 1.4vw;
+  }
+
+  header a[href$="home.html"] img {
+    height: auto;
+    width: 100%;
+    padding-top: 4%;
+    padding-right: 3%;
+  }
 }
 
 @media only screen and (min-width: 601px) and (max-width: 834px) {
@@ -226,6 +245,50 @@ header a[href$="home.html"] img {
   font-weight: bolder;
 }
 
+@media only screen and (min-width: 1440px) {
+  #home picture {
+    margin-top: 1%;
+  }
+
+  .home-g {
+    margin-top: 0;
+  }
+
+  .first-g {
+    padding-bottom: 3%;
+  }
+
+  .quick-g {
+    padding-bottom: 30%;
+  }
+
+  .downarrow {
+    font-size: 4vw;
+  }
+
+  .scroll {
+    font-size: 2vw;
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: scale(1, 1) translateY(0);
+    }
+    10% {
+      transform: scale(1.1, 0.9) translateY(0);
+    }
+    30% {
+      transform: scale(0.9, 1.1) translateY(-50%);
+    }
+    50% {
+      transform: scale(1, 1) translateY(0);
+    }
+    100% {
+      transform: scale(1, 1) translateY(0);
+    }
+  }
+}
+
 @media only screen and (min-width: 601px) and (max-width: 834px) {
   #home picture {
     width: 40%;
@@ -326,7 +389,7 @@ header a[href$="home.html"] img {
 
 .title {
   padding-top: 1%;
-  padding-left: 8%;
+  padding-left: 9%;
   font-size: 2.3em;
   padding-bottom: 0;
   font-family: "Montserrat", sans-serif;
@@ -437,6 +500,41 @@ button {
   overflow: hidden;
   max-height: 0;
   transition: max-height 0.2s ease-out;
+}
+
+@media only screen and (min-width: 1440px) {
+  #about-me {
+    align-items: start;
+  }
+
+  #about-me picture {
+    width: 35%;
+  }
+
+  .spiel {
+    width: 47%;
+    font-size: 1.9vw;
+  }
+
+  .spiel br {
+    display: none;
+  }
+
+  .contact {
+    width: 34%;
+    height: 180%;
+    font-size: 1em;
+  }
+
+  .accordion {
+    font-size: 2vw;
+    padding-left: 6%;
+  }
+
+  .rightarrow {
+    font-size: 2.5vw;
+    padding-right: 1%;
+  }
 }
 
 @media only screen and (min-width: 601px) and (max-width: 834px) {
@@ -553,6 +651,16 @@ h5 {
 .suspense {
   width: 60%;
   height: auto;
+}
+
+@media only screen and (min-width: 1440px) {
+  #Constructing {
+    margin-bottom: 2%;
+  }
+
+  .suspense {
+    width: 70%;
+  }
 }
 
 @media only screen and (min-width: 601px) and (max-width: 834px) {
