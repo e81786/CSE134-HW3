@@ -271,14 +271,14 @@ h2 {
 @media only screen and (max-width: 992px) {
   .doc {
     width: 80%;
-    height: 950px;
+    height: 800px;
   }
 }
 
 @media only screen and (max-width: 768px) {
   .doc {
     width: 80%;
-    height: 780px;
+    height: 650px;
   }
 }
 
